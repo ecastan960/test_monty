@@ -20,6 +20,7 @@ char line[50];
 
 void push(stack_t **stack, unsigned int line_c){
 	printf("Linea donde hay push :%d \n", line_c);
+	printf("linea es %s \n", line);
 	/*int number;
 	stack_t *temp;
 	temp = malloc(sizeof(stack_t));
