@@ -16,6 +16,7 @@ typedef struct instruction_s
 } instruction_t;
 
 stack_t *Top_Node;
+char line[50];
 
 void push(stack_t **stack, unsigned int line_c){
 	printf("Linea donde hay push :%d \n", line_c);
@@ -107,7 +108,7 @@ main() {
 
 	FILE *fp;
 	stack_t *stack = NULL;
-	char line[50];
+	
 	int comp;
 	char *str = (char *)malloc(sizeof(char));
 	char **command = (char **)malloc(32 * sizeof(char *));
